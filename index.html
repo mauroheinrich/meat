@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cálculo del Mínimo Ético</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="Aviso"> 
+    <br>
+     <p> <span>Importante</span>: ingresar valores decimales con punto y no coma, por ejemplo: 254,20 se debería ingresar 254.20</p>
+		<br>
+		</div>   
+	<div class="container">
+		<h1>Cálculo del Mínimo Ético de Acompañantes Terapéuticos de ER</h1>
+		
+		<form id="form">
+			<label for="M">Monotributo (Categoría D):</label>
+			<input type="decimal" id="M" name="M" required><br>
+
+			<label for="PA">Valor Actual de Prestación de Apoyo (Nomenclador Nacional):</label>
+			<input type="decimal" id="PA" name="PA" required><br>
+
+			<label for="TP">Valor actual del Transporte Público Urbano (Ciudad de Paraná):</label>
+			<input type="decimal" id="TP" name="TP" required><br>
+
+			<label for="ATER">Impuesto Provincial ATER (Categoría D):</label>
+			<input type="decimal" id="ATER" name="ATER" required><br>
+
+			<label for="CC">Cuota Cater actual:</label>
+			<input type="number" id="CC" name="CC" required><br>
+
+			<input type="submit" value="Calcular" id="btn-calcular">
+		</form>
+
+		<div id="resultado"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
